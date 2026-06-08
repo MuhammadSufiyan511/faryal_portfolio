@@ -30,7 +30,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Blue-Gold Flow",
     medium: "Mixed media on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "40 x 28 in",
     category: "Acrylic",
     image: art("WhatsApp Image 2026-06-08 at 12.31.39 PM (2).webp"),
@@ -42,7 +42,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Sacred Circle",
     medium: "Acrylic on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "30 x 30 in",
     category: "Oil Paintings",
     image: art("WhatsApp Image 2026-06-08 at 12.32.08 PM.webp"),
@@ -54,7 +54,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Whirling Light",
     medium: "Mixed media on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "36 x 36 in",
     category: "Watercolor",
     image: art("WhatsApp Image 2026-06-08 at 12.32.12 PM.webp"),
@@ -66,7 +66,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Mosaic of Mercy",
     medium: "Acrylic and ink on board",
-    year: "2025",
+    year: "2026",
     dimensions: "48 x 30 in",
     category: "Digital Art",
     image: art("WhatsApp Image 2026-06-08 at 12.32.15 PM.webp"),
@@ -78,7 +78,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Garden of Devotion",
     medium: "Acrylic on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "42 x 56 in",
     category: "Oil Paintings",
     image: art("WhatsApp Image 2026-06-08 at 12.32.18 PM.webp"),
@@ -90,7 +90,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Azure Invocation",
     medium: "Mixed media on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "30 x 40 in",
     category: "Acrylic",
     image: art("WhatsApp Image 2026-06-08 at 12.32.27 PM.webp"),
@@ -102,7 +102,7 @@ export const featuredArtworks: GalleryItem[] = [
   {
     title: "Green Sanctuary",
     medium: "Acrylic on canvas",
-    year: "2025",
+    year: "2026",
     dimensions: "36 x 48 in",
     category: "Sketches",
     image: art("WhatsApp Image 2026-06-08 at 12.32.32 PM.webp"),
@@ -176,6 +176,84 @@ export const heroGridImages = [
   art("WhatsApp Image 2026-06-08 at 12.32.18 PM.webp"),
 ];
 
+export const artGalleryImages = [
+  {
+    title: "Blue Gold Flow",
+    category: "Calligraphy",
+    image: art("WhatsApp Image 2026-06-08 at 12.31.39 PM (2).webp"),
+  },
+  {
+    title: "Azure Prayer",
+    category: "Calligraphy",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.08 PM.webp"),
+  },
+  {
+    title: "White Invocation",
+    category: "Spirit Study",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.12 PM.webp"),
+  },
+  {
+    title: "Golden Motion",
+    category: "Acrylic",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.15 PM.webp"),
+  },
+  {
+    title: "Crimson Orbit",
+    category: "Canvas",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.18 PM.webp"),
+  },
+  {
+    title: "Azure Structure",
+    category: "Mixed Media",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.27 PM.webp"),
+  },
+  {
+    title: "Green Sanctuary",
+    category: "Calligraphy",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.32 PM.webp"),
+  },
+  {
+    title: "Emerald Flow",
+    category: "Calligraphy",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.42 PM.webp"),
+  },
+  {
+    title: "Warm Verse",
+    category: "Study",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.44 PM.webp"),
+  },
+  {
+    title: "Night Bloom",
+    category: "Study",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.46 PM.webp"),
+  },
+  {
+    title: "Rose Light",
+    category: "Acrylic",
+    image: art("WhatsApp Image 2026-06-08 at 12.32.48 PM.webp"),
+  },
+  {
+    title: "Celestial Script",
+    category: "Calligraphy",
+    image: art("WhatsApp Image 2026-06-08 at 12.33.06 PM.jpeg"),
+  },
+  {
+    title: "Sacred Horizon",
+    category: "Mixed Media",
+    image: art("WhatsApp Image 2026-06-08 at 12.33.07 PM (1).jpeg"),
+  },
+  {
+    title: "Inner Bloom",
+    category: "Spirit Study",
+    image: art("WhatsApp Image 2026-06-08 at 12.33.07 PM.jpeg"),
+  },
+  {
+    title: "Golden Silence",
+    category: "Canvas",
+    image: art("WhatsApp Image 2026-06-08 at 12.33.08 PM.jpeg"),
+  },
+];
+
 export const processMoments = [
   {
     title: "Composition",
@@ -204,7 +282,7 @@ export const achievements = [
     image: cert("certificate 1.webp"),
   },
   {
-    title: "Ashraf-ul-Qalam National Calligraphy Competition 2025",
+    title: "Ashraf-ul-Qalam National Calligraphy Competition 2026",
     detail: "Participation in a major national calligraphy event",
     image: cert("certificate 2.webp"),
   },

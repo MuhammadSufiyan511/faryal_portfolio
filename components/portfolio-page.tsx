@@ -48,6 +48,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   achievements,
+  artGalleryImages,
   featuredArtworks,
   heroGridImages,
   processMoments,
@@ -796,10 +797,16 @@ function Hero({ onExplore }: { onExplore: () => void }) {
     const slowNetwork =
       connection?.saveData ||
       ["slow-2g", "2g", "3g"].includes(connection?.effectiveType ?? "");
-    const sourceImages = heroGridImages.slice(0, slowNetwork ? 4 : 10);
+    const sourceImages = shuffleArray(
+      heroGridImages.slice(0, slowNetwork ? 4 : heroGridImages.length)
+    );
+    const slots = slowNetwork ? 4 : 16;
 
     setGridItems(
-      sourceImages.map((src, idx) => ({ id: `hero-img-${idx}`, src }))
+      Array.from({ length: slots }, (_, idx) => ({
+        id: `hero-img-${idx}`,
+        src: sourceImages[idx % sourceImages.length],
+      }))
     );
   }, []);
 
@@ -1128,7 +1135,17 @@ export default function PortfolioPage() {
   }, [filter]);
 
   useEffect(() => {
-    setProcessCards(shuffleArray(processMoments));
+    const randomImages = shuffleArray(artGalleryImages).slice(
+      0,
+      processMoments.length
+    );
+
+    setProcessCards(
+      processMoments.map((step, index) => ({
+        ...step,
+        image: randomImages[index]?.image ?? step.image,
+      }))
+    );
   }, []);
 
   return (
@@ -1336,11 +1353,26 @@ export default function PortfolioPage() {
         <div className="section-divider" />
         <MeshGradient />
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
-          <SectionHeading
-            kicker="Featured gallery"
-            title="Art gallery only no certificates"
-            text="Browse the selected collection and filter by the visual language that best matches each piece. Tap any artwork to open a detailed view."
-          />
+          <div className="max-w-3xl">
+            <p className="text-xs uppercase tracking-[0.28em] text-gold">
+              Featured gallery
+            </p>
+            <h2 className="mt-3 font-serif text-4xl leading-none text-charcoal md:text-5xl">
+              Art gallery only no certificates
+            </h2>
+            <Link
+              href="/art-gallery"
+              className="mt-5 inline-flex items-center gap-2 rounded-full border border-gold/25 bg-charcoal px-5 py-3 text-sm font-medium text-paper shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-gold hover:bg-charcoal/95"
+            >
+              View Full Gallery
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-charcoal/72 md:text-base">
+              Browse the selected collection and filter by the visual language
+              that best matches each piece. Tap any artwork to open a detailed
+              view.
+            </p>
+          </div>
 
           {/* Filter buttons */}
           <motion.div
