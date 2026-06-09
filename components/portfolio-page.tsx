@@ -66,7 +66,7 @@ const filters: Array<"All" | PortfolioCategory> = [
   "Acrylic",
   "Watercolor",
   "Sketches",
-  "Digital Art",
+  "Texture Art",
 ];
 
 const navItems = [
@@ -909,7 +909,7 @@ function Hero({ onExplore }: { onExplore: () => void }) {
           >
             <span className="shimmer-text">Faryal</span>
             <br />
-            <span className="gradient-text">Rajpoot</span>
+            <span className="gradient-text">Zaheer</span>
           </motion.h1>
 
           <motion.p
@@ -1247,14 +1247,14 @@ export default function PortfolioPage() {
           <SectionHeading
             kicker="About the artist"
             title="Faith, color, and the discipline of composition."
-            text="Faryal Rajpoot's practice sits between devotion and contemporary presentation. Her calligraphy is built with patience and clarity, while her mixed-media work extends that same sense of rhythm into texture, atmosphere, and expressive color."
+            text="Faryal Zaheer's practice sits between devotion and contemporary presentation. Her calligraphy is built with patience and clarity, while her mixed-media work extends that same sense of rhythm into texture, atmosphere, and expressive color."
           />
 
           <div className="mt-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div variants={fadeUp} custom={1} className="space-y-8">
               <div className="glass-card !p-6 md:!p-8">
                 <p className="text-[15px] leading-7 text-charcoal/65">
-                  I am Faryal Rajpoot, a passionate self-taught artist
+                  I am Faryal Zaheer, a passionate self-taught artist
                   specializing in Islamic calligraphy and expressive mixed-media
                   paintings. My artistic journey began with a deep love for
                   creativity and spiritual expression. Through my artwork, I
@@ -1538,14 +1538,14 @@ export default function PortfolioPage() {
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
           <SectionHeading
             kicker="Exhibitions & achievements"
-            title="Certificates, competitions, and presentation moments."
+            title="Certificates"
             text="A gallery practice is strengthened by public recognition, training, and shared community spaces. These selected moments show that side of the portfolio."
           />
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {achievements.map((item, idx) => (
               <motion.article
-                key={item.title}
+                key={`${item.title}-${idx}`}
                 variants={fadeUp}
                 custom={idx}
                 className="overflow-hidden rounded-2xl glass-card !p-0 group"
@@ -1707,7 +1707,7 @@ export default function PortfolioPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
             <motion.div variants={fadeUp} custom={1} className="space-y-4">
               <div className="glass-card !p-6">
-                <p className="font-serif text-3xl">Faryal Rajpoot</p>
+                <p className="font-serif text-3xl">Faryal Zaheer</p>
                 <p className="mt-2 text-sm font-medium uppercase tracking-[0.24em] text-gold">
                   Calligraphy Artist & Visual Artist
                 </p>
@@ -1783,7 +1783,7 @@ export default function PortfolioPage() {
       <footer className="relative bg-paper">
         <div className="section-divider" />
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-10 text-sm text-charcoal/45 sm:px-8 lg:px-10 md:flex-row md:items-center md:justify-between">
-          <p className="font-serif text-lg shimmer-text">Faryal Rajpoot</p>
+          <p className="font-serif text-lg shimmer-text">Faryal Zaheer</p>
           <p className="text-charcoal/40">
             Calligraphy Artist & Visual Artist · {new Date().getFullYear()}
           </p>

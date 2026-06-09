@@ -16,11 +16,11 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Faryal Rajpoot | Calligraphy Artist & Visual Artist",
+  title: "Faryal Zaheer | Calligraphy Artist & Visual Artist",
   description:
-    "A premium single-page portfolio for Faryal Rajpoot, featuring Islamic calligraphy, mixed-media works, workshops, exhibitions, and commission inquiries.",
+    "A premium single-page portfolio for Faryal Zaheer, featuring Islamic calligraphy, mixed-media works, workshops, exhibitions, and commission inquiries.",
   keywords: [
-    "Faryal Rajpoot",
+    "Faryal Zaheer",
     "calligraphy artist",
     "visual artist",
     "Islamic calligraphy",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "artist portfolio",
   ],
   openGraph: {
-    title: "Faryal Rajpoot | Calligraphy Artist & Visual Artist",
+    title: "Faryal Zaheer | Calligraphy Artist & Visual Artist",
     description:
       "Elegant portfolio website for an Islamic calligraphy and visual artist.",
     type: "website",

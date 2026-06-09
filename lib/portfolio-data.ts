@@ -3,7 +3,7 @@ export type PortfolioCategory =
   | "Acrylic"
   | "Watercolor"
   | "Sketches"
-  | "Digital Art";
+  | "Texture Art";
 
 export type Artwork = {
   title: string;
@@ -57,23 +57,23 @@ export const featuredArtworks: GalleryItem[] = [
     year: "2026",
     dimensions: "36 x 36 in",
     category: "Watercolor",
-    image: art("WhatsApp Image 2026-06-08 at 12.32.12 PM.webp"),
+    image: art("color art.webp"),
     width: 1072,
     height: 776,
     accent: "Bold contrast with expressive handwritten forms",
     summary: "A vivid calligraphic study that feels kinetic and luminous.",
   },
   {
-    title: "Mosaic of Mercy",
-    medium: "Acrylic and ink on board",
+    title: "Textured Verse",
+    medium: "Fabric texture and mixed media on board",
     year: "2026",
     dimensions: "48 x 30 in",
-    category: "Digital Art",
-    image: art("WhatsApp Image 2026-06-08 at 12.32.15 PM.webp"),
+    category: "Texture Art",
+    image: art("fabric text art.webp"),
     width: 996,
     height: 936,
-    accent: "Color-blocked lettering with a graphic, contemporary edge",
-    summary: "A framed composition built like a visual prayer mosaic.",
+    accent: "Layered fabric texture with calligraphic presence",
+    summary: "A tactile composition that blends textile surface and sacred form.",
   },
   {
     title: "Garden of Devotion",
@@ -188,14 +188,9 @@ export const artGalleryImages = [
     image: art("WhatsApp Image 2026-06-08 at 12.32.08 PM.webp"),
   },
   {
-    title: "White Invocation",
+    title: "Chromatic Invocation",
     category: "Spirit Study",
-    image: art("WhatsApp Image 2026-06-08 at 12.32.12 PM.webp"),
-  },
-  {
-    title: "Golden Motion",
-    category: "Acrylic",
-    image: art("WhatsApp Image 2026-06-08 at 12.32.15 PM.webp"),
+    image: art("color art.webp"),
   },
   {
     title: "Crimson Orbit",
@@ -231,6 +226,11 @@ export const artGalleryImages = [
     title: "Rose Light",
     category: "Acrylic",
     image: art("WhatsApp Image 2026-06-08 at 12.32.48 PM.webp"),
+  },
+  {
+    title: "Textured Verse",
+    category: "Texture Art",
+    image: art("fabric text art.webp"),
   },
   {
     title: "Celestial Script",
@@ -277,22 +277,22 @@ export const processMoments = [
 
 export const achievements = [
   {
-    title: "PNCA Calligraphy Training Certificate",
+    title: "Certificate of Achievement",
     detail: "6-month training course completed in calligraphy",
     image: cert("certificate 1.webp"),
   },
   {
-    title: "Ashraf-ul-Qalam National Calligraphy Competition 2026",
+    title: "Certificate of Achievement",
     detail: "Participation in a major national calligraphy event",
     image: cert("certificate 2.webp"),
   },
   {
-    title: "Al-Qadir University Project Trust",
+    title: "Certificate of Achievement",
     detail: "Poster competition participation and recognition",
     image: cert("certificate 3.webp"),
   },
   {
-    title: "Calligraphy Competition Recognition",
+    title: "Certificate of Achievement",
     detail: "Award and presentation moments from recent art events",
     image: cert("certificate 4.webp"),
   },
@@ -302,9 +302,14 @@ export const achievements = [
     image: cert("certificate 5.webp"),
   },
   {
-    title: "Workshop and Public Presentation",
+    title: "Certificate of Achievement",
     detail: "Teaching, exhibition, and community-facing art activity",
     image: cert("certificate 6.webp"),
+  },
+  {
+    title: "Certificate of Achievement",
+    detail: "Added certificate from recent practice and presentation work",
+    image: cert("new_certificate.webp"),
   },
 ];
 
@@ -329,5 +334,12 @@ export const testimonials = [
     quote:
       "The work feels thoughtful and carefully composed. It brings together tradition and a contemporary visual language beautifully.",
     image: me("WhatsApp Image 2026-06-08 at 12.33.13 PM.webp"),
+  },
+  {
+    name: "Workshop Student",
+    role: "Calligraphy session",
+    quote:
+      "The session felt clear, warm, and very professional. I left with a better understanding of both technique and expression.",
+    image: me("new.webp"),
   },
 ];
