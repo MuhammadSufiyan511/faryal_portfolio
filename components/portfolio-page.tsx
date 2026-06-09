@@ -65,7 +65,6 @@ const filters: Array<"All" | PortfolioCategory> = [
   "Oil Paintings",
   "Acrylic",
   "Watercolor",
-  "Sketches",
   "Texture Art",
 ];
 

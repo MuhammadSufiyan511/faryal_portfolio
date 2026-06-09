@@ -2,7 +2,6 @@ export type PortfolioCategory =
   | "Oil Paintings"
   | "Acrylic"
   | "Watercolor"
-  | "Sketches"
   | "Texture Art";
 
 export type Artwork = {
@@ -104,7 +103,7 @@ export const featuredArtworks: GalleryItem[] = [
     medium: "Acrylic on canvas",
     year: "2026",
     dimensions: "36 x 48 in",
-    category: "Sketches",
+    category: "Acrylic",
     image: art("WhatsApp Image 2026-06-08 at 12.32.32 PM.webp"),
     width: 1076,
     height: 1264,
