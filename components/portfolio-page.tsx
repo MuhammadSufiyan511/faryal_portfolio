@@ -1161,7 +1161,7 @@ export default function PortfolioPage() {
             href="#top"
             className="font-serif text-xl tracking-[0.08em] text-charcoal transition-colors hover:text-gold"
           >
-            <span className="shimmer-text">FARYAL RAJPOOT</span>
+            <span className="shimmer-text">FARYAL ZAHEER</span>
           </Link>
           <nav className="hidden items-center gap-7 text-sm text-charcoal/60 md:flex">
             {navItems.map(([label, href]) => (
